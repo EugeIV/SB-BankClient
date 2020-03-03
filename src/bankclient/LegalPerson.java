@@ -1,16 +1,13 @@
 package bankclient;
 
-public class LegalPerson extends Client
-{
+public class LegalPerson extends Client {
     private int FEE = 100;
 
-    public LegalPerson()
-    {
-        bankAccount = (int) (2000 + Math.random() * 1000);
+    public LegalPerson() {
+        bankAccount = ++count;
     }
 
-    public void takeTheMoney(double money)
-    {
+    public void takeTheMoney(double money) {
         super.takeTheMoney(money + money / FEE);
     }
 }

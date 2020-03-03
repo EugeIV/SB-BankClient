@@ -3,10 +3,8 @@ import bankclient.LegalPerson;
 import bankclient.PhysicalPerson;
 import bankclient.PrivateBusinessman;
 
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         Client client = new PhysicalPerson();
         Client client1 = new PhysicalPerson();
         Client client2 = new LegalPerson();
